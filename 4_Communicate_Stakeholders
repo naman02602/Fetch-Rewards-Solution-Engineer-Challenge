@@ -2,24 +2,24 @@ Hey John,
 
 I wanted to give you a quick update on the data quality evaluation for Fetch Rewards data. Here are a few key points I’ve uncovered:
 
-_1. Data Quality Issues:_
+1. Data Quality Issues:
+- Missing Values in key fields like userId, receipt_id, totalSpent, and product_id.
+- Non-Numeric Values in the totalSpent field causing potential issues.
+- Duplicate Records for user_id and receipt_id.
+- Invalid Date Ranges found in purchaseDate—some dates are too far in the past.
+- Referential Integrity issues where receipts reference non-existent user IDs and brand IDs.
+- Inconsistent Receipt Data—some receipts are missing basic fields like Item ID.
 
-Missing Values in key fields like userId, receipt_id, totalSpent, and product_id.
-Non-Numeric Values in the totalSpent field causing potential issues.
-Duplicate Records for user_id and receipt_id.
-Invalid Date Ranges found in purchaseDate—some dates are too far in the past.
-Referential Integrity issues where receipts reference non-existent user IDs and brand IDs.
-Inconsistent Receipt Data—some receipts are missing basic fields like Item ID.
-Questions/Ask:
+2.Questions/Ask:
+- Can you clarify the data entry protocols? Are there known issues that might cause these inconsistencies?
+- Are there any specific business rules we should apply during the validation process?
+- Could you connect me with the dev team to get documentation on data sources and business rules?
 
-Can you clarify the data entry protocols? Are there known issues that might cause these inconsistencies?
-Are there any specific business rules we should apply during the validation process?
-Could you connect me with the dev team to get documentation on data sources and business rules?
-Performance & Scaling:
+3. Performance & Scaling:
+- As data volume grows, we may face performance challenges. I suggest implementing automated checks and considering cloud-based storage for scalability.
+- I’ll also optimize SQL queries once the validation process is complete to maintain performance.
+- For cloud transition, we should plan for backup and recovery strategies.
 
-As data volume grows, we may face performance challenges. I suggest implementing automated checks and considering cloud-based storage for scalability.
-I’ll also optimize SQL queries once the validation process is complete to maintain performance.
-For cloud transition, we should plan for backup and recovery strategies.
 Let me know if you’d like to chat more about any of these. Looking forward to collaborating on improving the data quality!
 
 Best,
