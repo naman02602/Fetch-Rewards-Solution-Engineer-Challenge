@@ -21,7 +21,6 @@ The repository contains the following files:
 - **2_SQL_Queries.sql**: SQL queries that answer the business questions listed in the exercise.
 - **3_DataQualityValidation.ipynb**: Python code used to identify and analyze data quality issues in the provided datasets.
 - **4_Communicate_Stakeholders**: A Slack message drafted to communicate data quality issues to business stakeholders.
-- **DataModel.sql**: SQL script for creating the structured relational data model based on the provided JSON data.
 
 ---
 
